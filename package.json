@@ -1,6 +1,6 @@
 {
   "name": "@dialectik/prism-plugin",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "type": "module",
   "publishConfig": {
     "access": "public"
@@ -8,6 +8,7 @@
   "description": "Dialectik plugin for Prism",
   "types": "lib/index.d.mts",
   "module": "lib/index.mjs",
+  "main": "lib/index.mjs",
   "scripts": {
     "build": "rm -rf ./lib/* && tsc && cp -r ./src/react ./lib"
   },
@@ -19,7 +20,7 @@
   "author": "benoit.rognier@edukera.com",
   "license": "MIT",
   "dependencies": {
-    "@dialectik/plugin-interface": "^1.0.7",
+    "@dialectik/plugin-interface": "^1.0.8",
     "rehype-prism-plus": "^1.5.1",
     "unist-util-map": "^3.1.3"
   }

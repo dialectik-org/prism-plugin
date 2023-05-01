@@ -6,7 +6,6 @@ const onelighttheme = 'https:/cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/pri
 const prismreactrenderer = "import prismReactRenderer from 'https://cdn.jsdelivr.net/npm/prism-react-renderer@1.3.5/+esm'"
 
 const prismPlugin : IDialectikPlugin = {
-  name: 'prism-plugin',
   stylesheets: [onelighttheme],
   emstylesheets: [prismreactrenderer],
   remarkPlugins: [remarkCodeFrame],
