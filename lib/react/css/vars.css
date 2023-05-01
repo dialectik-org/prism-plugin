@@ -1,4 +1,6 @@
 :root {
+  --highlight-line-bg-color: #eef9fd;
+  --highlight-line-border-color: #4cb3d4;
   --copy-button-right: 12px;
   --copy-button-top: 12px;
   --copy-button-border-color: #8080807a;

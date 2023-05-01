@@ -5,6 +5,7 @@ import copy from 'copy-text-to-clipboard';
 // @ts-ignore
 import React from 'react';
 
+import './css/prism-plus.css'
 import './css/copy-button.css'
 
 interface CopyButtonProps {
