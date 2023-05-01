@@ -1,6 +1,6 @@
 {
   "name": "@dialectik/prism-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "publishConfig": {
     "access": "public"
@@ -8,10 +8,6 @@
   "description": "Dialectik plugin for Prism",
   "types": "lib/index.d.mts",
   "module": "lib/index.mjs",
-  "files": [
-    "dist",
-    "src"
-  ],
   "scripts": {
     "build": "rm -rf ./lib/* && tsc && cp -r ./src/react ./lib"
   },
