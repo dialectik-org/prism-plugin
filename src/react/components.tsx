@@ -2,11 +2,12 @@
 import clsx from 'clsx';
 // @ts-ignore
 import copy from 'copy-text-to-clipboard';
+
 // @ts-ignore
 import React from 'react';
 
-import './css/prism-plus.css'
 import './css/copy-button.css'
+import './css/prism-plus.css'
 
 interface CopyButtonProps {
   readonly code: string;
@@ -61,4 +62,10 @@ export const CodeFrame = ({ code, children } : { children : any, code : any }) =
     <CopyButton code={code}></CopyButton>
     { children }
   </div>
+}
+
+export const getComponents = () => {
+  return {
+    codeframe: (props: any) => <CodeFrame code={props.code} children={props.children} />
+  }
 }
