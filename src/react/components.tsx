@@ -8,6 +8,7 @@ import React from 'react';
 
 import './css/copy-button.css'
 import './css/prism-plus.css'
+import './css/vars.css'
 
 interface CopyButtonProps {
   readonly code: string;
@@ -27,7 +28,6 @@ const CopyButton = ({code, className}: CopyButtonProps) => {
   }, [code]);
 
   React.useEffect(() => () => window.clearTimeout(copyTimeout.current), []);
-  console.log('CopyButton here')
   return (
     <button
       type="button"

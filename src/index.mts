@@ -23,7 +23,7 @@ const prismPlugin : IDialectikPlugin = {
     // Test the pattern against the input content
     return pattern.test(content);
   },
-  requires: []
+  requires: ["default-plugin"]
 }
 
 const loadPluginFiles = (pluginDirectory: string) => {
